@@ -1,20 +1,32 @@
 {
   "name": "google-site-markdown-to-clip",
   "displayName": "Google Sites Markdown to Clipboard",
-  "description": "Copy Markdown from VS Code in Google Sites markdown script format",
-  "version": "0.0.1",
+  "description": "Copy Markdown from VS Code in Google Sites markdown script format.(use https://github.com/tutts/google-sites-markdown)",
+  "version": "1.0.0",
+  "publisher": "j69",
   "repository": {
     "type": "git",
     "url": "https://github.com/HiroyukiNIshimura/google-site-markdown-to-clip.git"
   },
+  "homepage": "https://github.com/HiroyukiNIshimura/google-site-markdown-to-clip",
+  "bugs": {
+    "url": "https://github.com/HiroyukiNIshimura/google-site-markdown-to-clip/issues"
+  },
   "license": "MIT",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.138.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "keywords": [
+    "markdown",
+    "google sites"
+  ],
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -39,17 +51,20 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "package": "vsce package",
+    "publish": "vsce publish"
   },
   "devDependencies": {
-    "@types/vscode": "^1.138.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "24.x",
-    "typescript-eslint": "^8.61.1",
+    "@types/vscode": "^1.138.0",
+    "@vscode/test-cli": "^0.0.15",
+    "@vscode/test-electron": "^3.0.0",
+    "@vscode/vsce": "^4.0.0",
     "eslint": "^10.5.0",
     "typescript": "^6.0.3",
-    "@vscode/test-cli": "^0.0.15",
-    "@vscode/test-electron": "^3.0.0"
+    "typescript-eslint": "^8.61.1"
   },
   "overrides": {
     "diff": "^8.0.4",
