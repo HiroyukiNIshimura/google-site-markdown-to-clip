@@ -4,6 +4,8 @@ All notable changes to the "google-site-markdown-to-clip" extension will be docu
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## [0.0.1] - 2026-09-24
 
-- Initial release
+- Copy the active Markdown document or selection as a Google Sites markdown script.
+- Add the command to the Markdown editor context menu.
+- Escape template-literal syntax safely in copied Markdown.
