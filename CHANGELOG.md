@@ -4,6 +4,9 @@ All notable changes to the "google-site-markdown-to-clip" extension will be docu
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.1.1] - 2026-09-25
+- Fix README and documentation references.
+
 ## [1.1.0] - 2026-09-25
 
 - Add Mermaid.js support for rendering `language-mermaid` code blocks in Google Sites.

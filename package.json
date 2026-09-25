@@ -2,7 +2,7 @@
   "name": "google-site-markdown-to-clip",
   "displayName": "Google Sites Markdown to Clipboard",
   "description": "Copy Markdown from VS Code in Google Sites markdown script format.(use https://github.com/tutts/google-sites-markdown)",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "publisher": "j69",
   "repository": {
     "type": "git",
